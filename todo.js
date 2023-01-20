@@ -2,14 +2,10 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
+
 function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
-}
-
-function cancelLine(event) {
-    
-
 }
 
 function paintToDo(newToDo) {
@@ -25,9 +21,9 @@ function paintToDo(newToDo) {
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li); 
-    console.log(toDoList);
+    
 
-    checkBox.addEventListener("change", () => {
+    checkBox.addEventListener("submit", () => {
         if (checkBox.checked === true) {
           // textDecoration 의 속성을 line-through로 변경
           span.style.textDecoration = "line-through";

@@ -2,11 +2,12 @@ const loginForm = document.querySelector("#login-form");
 const loginId = document.querySelector("#login_id");
 const loginPassword = document.querySelector("#login_password");
 const greeting = document.querySelector("#greeting");
-const loginWaring = document.querySelector("#login-form h3")
+const loginWaring = document.querySelector("#login-form h3");
+const bodyJs = document.querySelector(".whole_background");
 const clock = document.querySelector("h2#clock");
 const images = ["1.jpg", "2.jpg", "3.jpg"];
 const chosenImage = images[Math.floor(Math.random()*images.length)];
-const bgImage = document.createElement("img");
+const toDoForm = document.getElementById("todo-form");
 
 const HIDDEN_CLASSNAME = "hidden";
 
@@ -17,14 +18,15 @@ function onLoginSubmit(event) {
         event.preventDefault();
     } else {
         event.preventDefault();
+        bodyJs.classList.remove("whole_background");
         const username = loginId.value;
         loginForm.classList.add(HIDDEN_CLASSNAME);
+        toDoForm.classList.remove(HIDDEN_CLASSNAME);
         paintGreetings(username);
         getClock();
         setInterval(getClock, 1000);
-
-        bgImage.src = `${chosenImage}`;
-        document.body.appendChild(bgImage);
+        bodyJs.background = `${chosenImage}`;
+        bodyJs.classList.add("random_image_background");
     }
 }
 

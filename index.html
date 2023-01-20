@@ -7,46 +7,35 @@
     <link rel="stylesheet" href="style.css" />
     <title>Gyuri</title>
 </head>
-<body>
-    <form id="login-form">
-        <h2>Welcome</h2>
-        <h1><b>My Site</b></h1>
-        <img src="street-7690347_1920.jpg" alt="My Image" width="300" height="200">
-        <br>
-        <input id="login_id"
-        type="text"
-        placeholder="아이디"
-        />
-        <br/>
-        <input id="login_password"
-        type="password"
-        placeholder="비밀번호"
-        />
-        <br/>
-        <input type="submit" value="로그인" />
-        <br/>
-        <h3 style="color:red;"></h3>
-        <br>
-        <input id="sign_in_page" type="button" onclick="newPage()" value="이메일 회원가입" />
-        <br/>
-        <a href="#">아이디/비밀번호 찾기></a>
-        <br/>
-        <div>
-            <input type="button" value="네이버" />
+<body class="whole_background">
+    <div>
+        <form id="login-form">
+            <h2>Welcome</h2>
+            <h1><b>My Site</b></h1>
+            <br>
+            <input id="login_id"
+            type="text"
+            placeholder="아이디"
+            />
             <br/>
-            <input type="button" value="카카오톡" />
+            <input id="login_password"
+            type="password"
+            placeholder="비밀번호"
+            />
             <br/>
-            <input type="button" value="페이스북" />
-        </div>
-
-    </form>
+            <input type="submit" value="로그인" />
+            <br/>
+            <h3 style="color:red;"></h3>
+        </form>
+    
     <h2 id="clock"></h2>
     <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-form">
+    <form class="hidden" id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" required />
     </form>
     <ul id="todo-list"></ul>
     <script src="app.js"></script>
     <script src="todo.js"></script>
+</div>
 </body>
 </html>
