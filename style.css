@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+}
+
+
+.whole_background {
+    background-image: url("../8일차/street-7690347_1920.jpg");
+    background-size: cover;
+}
+
+#login-form {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    zoom: 150%;
+}
+
+.center {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    zoom: 150%;
+}
+
+#clock {
+    position: absolute;
+    top: 18%;
+    left: 31%;
+    zoom: 150%;
+    font-size: xx-large;
+}
+
+#todo-form {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    zoom: 150%;
+}
+
+#greeting {
+    position: absolute;
+    top: 13%;
+    left: 31%;
+    zoom: 150%;
+    font-size: x-large;
+    color: aliceblue;
+}
+
+.random_image_background {
+    background-size: cover;
+}
